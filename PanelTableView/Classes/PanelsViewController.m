@@ -65,7 +65,7 @@
 	[_scrollView setPagingEnabled:YES];
 	[_scrollView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
 	[self.view addSubview:self.scrollView];
-	[_scrollView setContentSize:CGSizeMake(([self panelViewSize].width+2*GAP)*[self numberOfPanels],_scrollView.frame.size.height)];
+	[_scrollView setContentSize:CGSizeMake(([self panelViewSize].width+2*GAP)*[self numberOfPanels],_scrollView.frame.size.height-frame.origin.y)];
 	
 	_recycledPages = [NSMutableSet set];
 	_visiblePages = [NSMutableSet set];
