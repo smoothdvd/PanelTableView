@@ -391,4 +391,12 @@
 	return nil;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if ([self.delegate respondsToSelector:@selector(pannelView:viewForHeaderInPage:section:)]) {
+        return [self.delegate pannelView:self viewForHeaderInPage:self.pageNumber section:section];
+    }
+    return nil;
+}
+
 @end
