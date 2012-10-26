@@ -393,7 +393,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    if ([self.delegate respondsToSelector:@selector(pannelView:viewForHeaderInPage:section:)]) {
+    if ([self.delegate respondsToSelector:@selector(panelView:viewForHeaderInPage:section:)]) {
         return [self.delegate panelView:self viewForHeaderInPage:self.pageNumber section:section];
     }
     return nil;
