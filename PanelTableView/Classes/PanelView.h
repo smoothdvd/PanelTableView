@@ -42,7 +42,8 @@
 - (CGFloat)panelView:(id)panelView heightForRowAtIndexPath:(PanelIndexPath *)indexPath;
 - (NSInteger)panelView:(id)panelView numberOfSectionsInPage:(NSInteger)pageNumber;
 - (NSString*)panelView:(id)panelView titleForHeaderInPage:(NSInteger)pageNumber section:(NSInteger)section;
-- (UIView *)pannelView:(id)panelView viewForHeaderInPage:(NSInteger)pageNumber section:(NSInteger)section;
+- (UIView *)panelView:(id)panelView viewForHeaderInPage:(NSInteger)pageNumber section:(NSInteger)section;
+- (void)panelView:(id)panelView didScroll:(UIScrollView *)scrollView;
 @end
 
 @interface PanelView : UIView <UITableViewDelegate, UITableViewDataSource>

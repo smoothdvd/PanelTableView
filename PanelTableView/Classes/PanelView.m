@@ -394,9 +394,16 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     if ([self.delegate respondsToSelector:@selector(pannelView:viewForHeaderInPage:section:)]) {
-        return [self.delegate pannelView:self viewForHeaderInPage:self.pageNumber section:section];
+        return [self.delegate panelView:self viewForHeaderInPage:self.pageNumber section:section];
     }
     return nil;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if ([self.delegate respondsToSelector:@selector(panelView:didScroll:)]) {
+        return [self.delegate panelView:self didScroll:scrollView];
+    }
 }
 
 @end
