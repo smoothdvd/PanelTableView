@@ -406,4 +406,11 @@
     }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if ([self.delegate respondsToSelector:@selector(panelView:heightForHeaderInSection:)]) {
+        return [self.delegate panelView:self heightForHeaderInSection:section];
+    }
+}
+
 @end
