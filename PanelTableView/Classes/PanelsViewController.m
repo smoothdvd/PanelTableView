@@ -408,5 +408,11 @@
 	return [NSString stringWithFormat:@"Page %i Section %i", pageNumber, section];
 }
 
+- (void)goToPanel:(NSInteger)index
+{
+    self.scrollView.bounds = CGRectMake(index * self.scrollView.bounds.size.width, self.scrollView.bounds.origin.y, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
+    
+    [self tilePages];
+}
 
 @end

@@ -68,7 +68,9 @@
 - (void)pushNextPage;
 - (void)jumpToPreviousPage;
 
-
 - (NSInteger)numberOfPanels;
+
+#pragma mark - PYology, Yann
+- (void)goToPanel:(NSInteger)index;
 
 @end
