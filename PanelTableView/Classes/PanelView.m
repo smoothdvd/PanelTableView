@@ -391,4 +391,28 @@
 	return nil;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if ([self.delegate respondsToSelector:@selector(panelView:viewForHeaderInPage:section:)]) {
+        return [self.delegate panelView:self viewForHeaderInPage:self.pageNumber section:section];
+    }
+    return nil;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if ([self.delegate respondsToSelector:@selector(panelView:didScroll:)]) {
+        return [self.delegate panelView:self didScroll:scrollView];
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if ([self.delegate respondsToSelector:@selector(panelView:heightForHeaderInSection:)]) {
+        return [self.delegate panelView:self heightForHeaderInSection:section];
+    } else {
+        return 0;
+    }
+}
+
 @end
