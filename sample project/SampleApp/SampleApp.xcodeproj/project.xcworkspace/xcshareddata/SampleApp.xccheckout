@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C2DC6382-C625-46E1-AE98-3F140EBC4086</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SampleApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>46D4F8C9-8A7A-41FC-98DF-4C354D7A0DFF</key>
+		<string>https://github.com/xhzengAIB/PanelTableView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sample project/SampleApp/SampleApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>46D4F8C9-8A7A-41FC-98DF-4C354D7A0DFF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xhzengAIB/PanelTableView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>46D4F8C9-8A7A-41FC-98DF-4C354D7A0DFF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>46D4F8C9-8A7A-41FC-98DF-4C354D7A0DFF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PanelTableView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
