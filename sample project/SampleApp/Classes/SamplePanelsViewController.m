@@ -34,6 +34,12 @@
 	return self;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    if ([self.navigationController.navigationBar respondsToSelector:@selector(setBarTintColor:)])
+        [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
+}
+
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];

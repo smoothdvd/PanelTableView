@@ -32,6 +32,7 @@
  */
 
 #import "PanelView.h"
+#import "FountionCommon.h"
 
 @interface PanelView()
 - (void)show:(BOOL)show;
@@ -46,6 +47,11 @@
 		[self setBackgroundColor:[UIColor whiteColor]];
 		
 		_tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,frame.size.width,frame.size.height)];
+        UIEdgeInsets contentInset = _tableView.contentInset;
+        contentInset.top = [FountionCommon getAdapterHeight];
+        _tableView.contentInset = contentInset;
+        _tableView.scrollIndicatorInsets = contentInset;
+
 		[self addSubview:_tableView];
 		[_tableView setDelegate:self];
 		[_tableView setDataSource:self];

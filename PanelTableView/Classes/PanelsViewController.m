@@ -105,6 +105,12 @@
 	[panelView pageWillDisappear];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    if ([self respondsToSelector:@selector(automaticallyAdjustsScrollViewInsets)])
+        self.automaticallyAdjustsScrollViewInsets = NO;
+}
+
 #pragma mark editing
 
 - (void)shouldWiggle:(BOOL)wiggle
